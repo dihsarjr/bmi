@@ -16,6 +16,11 @@ class ViewController: UIViewController {
        
     }
 
+    @IBAction func calculateButton(_ sender: UIButton) {
+        let secondVC = SecondViewController()
+        secondVC.bmiValue = "hahahahah"
+        self.present(secondVC, animated: true, completion: nil)
+    }
     @IBAction func heightSlider(_ sender: UISlider) {
         meters.text = String(sender.value)
     }
